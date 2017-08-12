@@ -2,6 +2,8 @@
 
 An API client library for Fitbit written in Node.js.
 
+### this repository is a fork from lukasolson/fitbit-node
+You need this patch for FitBit API version 1.2 to be able to pull intraday data from the FitBit-server.
 ## Usage
 1. `npm install fitbit-node`
 1. (In your JS file) `var FitbitApiClient = require("fitbit-node");`
