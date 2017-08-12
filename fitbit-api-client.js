@@ -178,8 +178,12 @@ FitbitApiClient.prototype = {
     }
 };
 
+// function getUrl(path, userId) {
+//     return path = 'https://api.fitbit.com/1/user/' + (userId || '-') + path;
+// }
+/* patch for FitBit API version 1.2 to be able to pull for intraday data */
 function getUrl(path, userId) {
-    return path = 'https://api.fitbit.com/1/user/' + (userId || '-') + path;
+return path = 'https://api.fitbit.com/1.2/user/' + (userId || '-') + path;
 }
 
 function mergeHeaders(accessToken, extraHeaders) {
